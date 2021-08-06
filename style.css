@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+.mobile {
+    display: inline-block;
+}
+
+.desktop {
+    display: none;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fraunces', serif;
+}
+
+h1,
+h2 {
+    font-weight: 900;
+}
+
+h1 {
+    color: black;
+    font-size: xx-large;
+}
+
+p {
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: smaller;
+    display: inline-block;
+    position: relative;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: medium;
+    margin-bottom: .5em;
+}
+
+hr {
+    border: 6px solid black;
+    border-radius: 5px;
+    width: 7em;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    margin-left: -67px;
+}
+
+
+
+header {
+    padding: 12px 15px;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.mobile {
+    margin: 20px 15px;
+    position: fixed;
+    z-index: 999;
+    top: 30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+nav.mobile ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 35px;
+    background-color: white;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav.mobile ul li {
+    padding-top: 35px;
+}
+
+nav.mobile ul li a {
+    color: hsl(232, 10%, 55%);
+}
+
+nav.desktop ul li a {
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav.mobile ul li.btn a {
+    background-color: hsl(51, 100%, 49%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    padding: .8em 1.5em;
+    border-radius: 30px;
+}
+
+nav.mobile div.triangle {
+    width: 0;
+    height: 0;
+    align-self: flex-end;
+    border-left: 20px solid transparent;
+    border-bottom: 25px solid white;
+}
+
+.hide {
+    display: none;
+}
+
+nav.desktop ul {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0 10px;
+}
+
+nav.desktop ul li {
+    margin: 0 20px;
+}
+
+nav.desktop ul li.btn a {
+    background-color: white;
+    font-family: 'Fraunces', serif;
+    font-size: smaller;
+    color: black;
+    text-transform: uppercase;
+    padding: .8em 1.5em;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+
+main section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main section.hero {
+    position: relative;
+    width: 100%;
+}
+
+main section.hero img.imghero {
+    width: 100%;
+}
+
+main section.hero div {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main section.hero div h1 {
+    font-size: xx-large;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+section img.full {
+    width: 100%;
+}
+
+section div div.underline-text {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+
+section div.text {
+    padding: 30px 20px;
+}
+
+section.transform hr {
+    border-color: hsla(51, 100%, 49%, .3);
+    transition: .3s;
+}
+
+section.transform {
+    margin-top: -10px;
+}
+
+section.stand-out hr {
+    border-color: hsla(7, 99%, 70%, .3);
+    transition: .3s;
+}
+
+section.g-p div {
+    position: relative;
+}
+
+section div.g-p {
+    padding: 0;
+    margin-bottom: -10px;
+}
+
+section.g-p div.text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60%;
+}
+
+section.g-p img {
+    width: 100%;
+}
+
+section.g-p div.graphic h1,
+section.g-p div.graphic p {
+    color: hsl(167, 40%, 24%);
+}
+
+section.g-p div.graphic p {
+    font-size: smaller;
+}
+
+section.g-p div.photography h1,
+section.g-p div.photography p {
+    color: hsl(198, 62%, 26%);
+}
+
+section.g-p div.photography p {
+    font-size: smaller;
+}
+
+section.testimonial {
+    padding: 30px 20px;
+}
+
+section.testimonial h1 {
+    color: hsl(232, 10%, 55%);
+    font-size: medium;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+section.testimonial p {
+    color: hsl(213, 9%, 39%);
+}
+
+section.testimonial div.testimonial-container {
+    margin: 50px 0;
+}
+
+section.testimonial div.img-container,
+section.testimonial div.img-container img {
+    width: 50px;
+    height: 50px;
+}
+
+section.testimonial div.img-container {
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto;
+
+}
+
+section.testimonial div.name p {
+    color: hsl(232, 10%, 55%);
+    font-size: small;
+    margin-top: 0;
+}
+
+section.gallery {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section.gallery img {
+    width: 50%;
+}
+
+footer {
+    background-color: hsl(167, 42%, 71%);
+    color: #31786a;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+footer svg {
+    margin-bottom: 30px;
+}
+
+footer div.btm-nav {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+
+footer div.btm-nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: #31786a;
+    transition: .3s;
+}
+
+.logo-svg,
+.facebook,
+.instagram,
+.twitter,
+.pinterest {
+    fill: #31786a;
+    transition: .3s;
+}
+
+footer div.contact svg {
+    margin: 0 10px 50px 10px;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+nav.desktop ul li.btn a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+section.transform hr:hover {
+    border-color: hsl(51, 100%, 49%);
+}
+
+section.stand-out hr:hover {
+    border-color: hsl(7, 99%, 70%);
+}
+
+footer div.btm-nav a:hover {
+    color: white;
+}
+
+.logo-svg:hover,
+.facebook:hover,
+.instagram:hover,
+.twitter:hover,
+.pinterest:hover {
+    fill: white;
+}
+
+@media (min-width:600px) {
+    .desktop {
+        display: inline-block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    section.transform div.text,
+    section.stand-out div.text {
+        height: auto;
+        align-self: center;
+        text-align: left;
+        padding: 0 7%;
+    }
+
+    section.stand-out,
+    section.g-p {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    section.transform {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+    }
+
+    section.transform img,
+    section.transform div.text,
+    section.stand-out img,
+    section.stand-out div.text,
+    section.g-p div.g-p {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    section.testimonial {
+        margin: 80px 0;
+    }
+
+    section.testimonial div.testimonial {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    section.testimonial div.testimonial-container {
+        width: 25%;
+        margin: 20px 25px;
+    }
+
+    section.gallery {
+        flex-flow: row nowrap;
+    }
+
+    section.gallery img {
+        width: 25%;
+    }
+
+    section.g-p div.graphic,
+    section.g-p div.photography {
+        width: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    footer div.btm-nav {
+        width: 50%;
+    }
+}
