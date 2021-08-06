@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/vinnaseti/sunnyside-agency-landing-page-main)
-- Live Site URL: [Github Pages](https://vinnaseti.github.io//sunnyside-agency-landing-page-main/)
+- Live Site URL: [Github Pages](https://vinnaseti.github.io/sunnyside-agency-landing-page-main/)
 
 ## My process
 
